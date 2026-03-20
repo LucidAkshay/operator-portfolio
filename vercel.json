@@ -1,0 +1,39 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/chat.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "index.html",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "config.js",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "assets/**",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/chat",
+            "dest": "/api/chat.js"
+        },
+        {
+            "src": "/assets/(.*)",
+            "dest": "/assets/$1"
+        },
+        {
+            "src": "/config.js",
+            "dest": "/config.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
+}

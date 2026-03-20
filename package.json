@@ -1,0 +1,10 @@
+{
+    "name": "operator-portfolio",
+    "version": "1.0.0",
+    "description": "A brutalist-editorial developer portfolio. Config-driven, AI chat, terminal easter egg. No frameworks, no build tools.",
+    "private": false,
+    "license": "MIT",
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
