@@ -15,11 +15,10 @@
 
 const CONFIG = {
 
-  /* ─────────────────────────────
-     PERSONAL INFO
-  ───────────────────────────── */
+  googleAnalyticsId: "G-QL4VSSBNZ5", // TODO: Replace with your own Google Analytics ID
+
   name: "Akshay Sharma",
-  handle: "LucidAkshay",             // GitHub username
+  handle: "LucidAkshay",
   tagline: "Senior BI Analyst & AI Application Builder",
   headline: "Senior BI Analyst & AI Application Builder | Power Platform, n8n, GenAI",
   pronouns: "He/Him",
@@ -27,58 +26,34 @@ const CONFIG = {
   locationFull: "Jalandhar, Punjab, India",
   country: "IN",
 
-  /* ─────────────────────────────
-     CONTACT & LINKS
-  ───────────────────────────── */
-  email: "akshay@lucidakshay.dev",     // primary — personal outreach
-  emailHire: "hire@lucidakshay.dev",        // alias — recruiters & job leads
-  linkedin: "https://www.linkedin.com/in/LucidAkshay/",
+  email: "akshay@lucidakshay.dev",
+  emailHire: "hire@lucidakshay.dev",
+  linkedin: "https://www.linkedin.com/in/akshaysharmaensono/",
   github: "https://github.com/LucidAkshay",
   sponsor: "https://github.com/sponsors/LucidAkshay",
   kavachRepo: "https://github.com/LucidAkshay/kavach",
   templateRepo: "https://github.com/LucidAkshay/operator-portfolio",
   amrutya: "https://amrutyaessence.com",
 
-  /* ─────────────────────────────
-     ASSETS
-     Place files in ./assets/ folder
-  ───────────────────────────── */
-  photo: "./assets/photo.jpg",    // 440×520px portrait recommended
-  resume: "./assets/resume.pdf",
+  photo: "./assets/photo.jpg",
   ogImage: "./assets/og-preview.png",
 
-  /* ─────────────────────────────
-     SEO & SITE
-  ───────────────────────────── */
   siteUrl: "https://lucidakshay.dev",
   siteTitle: "Akshay Sharma — Senior BI Analyst & AI Application Builder",
   siteDesc: "Akshay Sharma — 14+ years experience. Senior BI Analyst at Ensono. Creator of Kavach AI EDR, Sarathi, Kamya. Power Platform, n8n, GenAI. Available for enterprise consulting, mentoring, and collaboration.",
-  twitterHandle: "@Akshay_Dvlpr",              // ← UPDATE if you have Twitter/X
+  twitterHandle: "@Akshay_Dvlpr",
 
-  /* ─────────────────────────────
-     HERO STATS
-  ───────────────────────────── */
   stats: {
     years: { value: "14+", label: "Years Experience" },
     gain: { value: "40%", label: "Productivity Gain" },
     associates: { value: "2900+", label: "Associates Served" },
-    products: { value: "4", label: "Products Built" },
+    products: { value: "5", label: "Products Built" },
   },
 
-  /* ─────────────────────────────
-     HERO TAGS (shown below description)
-  ───────────────────────────── */
   heroTags: ["Power Platform", "n8n", "GenAI", "AI Agents", "Founder"],
 
-  /* ─────────────────────────────
-     HERO DESCRIPTION
-  ───────────────────────────── */
-  heroDesc: `<strong>Senior BI Analyst at Ensono</strong> — architecting Power Platform solutions for C-suite Finance, delivering <strong>40% productivity gains</strong> across 2,900+ global associates. On the side: building <strong>Kavach</strong> (AI agent EDR), <strong>Sarathi</strong> (local AI), <strong>Kamya</strong> (AI image generation), and running <strong>Amrutya Essence™</strong> (luxury candles).`,
+  heroDesc: `<strong>Senior BI Analyst at Ensono</strong> — architecting Power Platform solutions for executive Finance teams, delivering <strong>40% productivity gains</strong> across 2,900+ global associates. On the side: building <strong>Kavach</strong> (AI agent EDR), <strong>Sarathi</strong> (local AI), <strong>Kamya</strong> (AI image generation), running <strong>Amrutya Essence™</strong> (luxury candles), and open sourcing <strong>Operator Portfolio</strong> (this site).`,
 
-  /* ─────────────────────────────
-     PROJECTS
-     status: "live" | "dev" | "tm"
-  ───────────────────────────── */
   projects: [
     {
       id: "kavach",
@@ -100,7 +75,7 @@ const CONFIG = {
       status: "dev",
       statusLabel: "⚙ In Dev",
       featured: false,
-      desc: "A customized local AI agent — running entirely on-device, no cloud dependency, no data leaving your machine. Complex multi-step tasks with genuine context awareness.",
+      desc: "A customized local AI agent — running entirely locally, no cloud dependency, no data leaving your machine. Complex tasks with genuine context awareness.",
       tags: ["Local LLM", "n8n", "Python", "Agents"],
       link: "#",
       linkText: "Coming Soon",
@@ -113,7 +88,7 @@ const CONFIG = {
       status: "dev",
       statusLabel: "⚙ In Dev",
       featured: false,
-      desc: "AI image generation platform built on ComfyUI workflows and LoRA training. Custom model fine-tuning, workflow automation, and a monetization layer — from PRD to production.",
+      desc: "AI image generation platform built on ComfyUI workflows and LoRA training. Custom model tuning, workflow automation, and a monetization layer.",
       tags: ["ComfyUI", "LoRA", "Python", "Product"],
       link: "#",
       linkText: "Coming Soon",
@@ -121,23 +96,32 @@ const CONFIG = {
     },
     {
       id: "amrutya",
-      type: "Premium Brand — E-Commerce",
+      type: "Premium Brand — ECommerce",
       name: "Amrutya Essence™",
       status: "tm",
       statusLabel: "® TM",
       featured: false,
-      desc: "Pure. Elegant. Timeless. A Trade Mark registered luxury candle brand — hand-poured scented candles, concrete jar vessels, Valentine Collection, Arabian Oudh. Built end to end.",
-      tags: ["Brand Design", "E-Commerce", "Candles", "Trademark"],
+      desc: "Pure. Elegant. Timeless. A registered luxury candle brand — hand poured scented candles, concrete jar vessels, Valentine Collection, Arabian Oudh. Built entirely by me.",
+      tags: ["Brand Design", "ECommerce", "Candles", "Trademark"],
       link: "https://amrutyaessence.com",
       linkText: "Visit Store",
       linkStyle: "gold",
     },
+    {
+      id: "portfolio",
+      type: "Open Source Template — Portfolio",
+      name: "Operator Portfolio",
+      status: "live",
+      statusLabel: "● Open Source",
+      featured: false,
+      desc: "The portfolio you're looking at — built from curiosity, open sourced for everyone. Config driven, AI chat, built in terminal easter egg. No frameworks, no build tools, no paid plugins. Loads instantly. Deploy to Vercel in 10 minutes.",
+      tags: ["HTML/CSS/JS", "Open Source", "Template", "Vercel", "MIT"],
+      link: "https://github.com/LucidAkshay/operator-portfolio",
+      linkText: "Get This Template",
+      linkStyle: "lime",
+    },
   ],
 
-  /* ─────────────────────────────
-     EXPERIENCE
-     Only show the 2–3 most relevant roles
-  ───────────────────────────── */
   experience: [
     {
       company: "Ensono",
@@ -148,8 +132,8 @@ const CONFIG = {
       location: "Pune, Maharashtra · Hybrid",
       current: true,
       bullets: [
-        "Architected Power Apps + Power BI + Power Automate for C-suite Finance — <strong>40% productivity gains</strong> across 2,900+ global associates",
-        "Developed <strong>20+ real-time Power BI dashboards</strong> transforming FP&A decision-making",
+        "Architected Power Apps + Power BI + Power Automate for executive Finance teams — <strong>40% productivity gains</strong> across 2,900+ global associates",
+        "Developed <strong>20+ real time Power BI dashboards</strong> transforming FP&A decision making",
         "Led Salesforce data governance: <strong>cleaned 50K+ records</strong> → 98% accuracy",
         "Established Power BI Center of Excellence — trained 50+ employees",
         "Built Finance SharePoint + Copilot chatbot → <strong>35% reduction</strong> in support queries",
@@ -165,19 +149,15 @@ const CONFIG = {
       location: "New Delhi · Remote",
       current: false,
       bullets: [
-        "Led JAPAC-wide process analysis — mapped 25+ workflows with global adoption",
+        "Led JAPAC wide process analysis — mapped 25+ workflows with global adoption",
         "Authored 40+ BRDs/FRDs for Sales Technology deployments across the region",
         "Achieved <strong>90%+ user adoption</strong> through strategic change management",
-        "Delivered C-level presentations influencing strategic roadmaps",
+        "Delivered executive presentations influencing strategic roadmaps",
       ],
       tags: ["BRD/FRD", "JAPAC", "Change Management", "Salesforce", "Process Mapping"],
     },
   ],
 
-  /* ─────────────────────────────
-     CERTIFICATIONS
-     type: "google" | "microsoft" | "ensono" | "be10x" | "default"
-  ───────────────────────────── */
   certifications: [
     { type: "google", issuer: "Google", name: "Generative AI for Educators Certificate", date: "Dec 2025", active: true },
     { type: "google", issuer: "Google", name: "Gemini Certified Educator", date: "Dec 2025 · Expires Dec 2028", active: true },
@@ -187,29 +167,19 @@ const CONFIG = {
     { type: "microsoft", issuer: "Microsoft", name: "MOS: Excel Expert (Excel and Excel 2019)", date: "Jan 2020", active: false },
   ],
 
-  /* ─────────────────────────────
-     AWARDS
-  ───────────────────────────── */
   awards: [
     { icon: "🏆", name: "India Spotlight Award", by: "Ensono · Jul 2024", note: "Going Above & Beyond" },
     { icon: "🔥", name: "Passion Award × 2", by: "VP + Director FP&A, Ensono", note: "Aug + Sep 2023" },
     { icon: "💡", name: "Innovator Award", by: "JAPAC VP, Oracle", note: "Mar 2021" },
-    { icon: "🚀", name: "Rookie of the Quarter", by: "Oracle · Jan 2020", note: "\"Quick learner, keen on ideas\"" },
+    { icon: "🚀", name: "Rookie of the Quarter", by: "Oracle · Jan 2020", note: "Quick learner, keen on ideas" },
   ],
 
-  /* ─────────────────────────────
-     ABOUT BIO
-     Use <em> for highlighted text
-  ───────────────────────────── */
   bio: [
-    `At <em>Ensono</em>, I architect Power Platform solutions for C-suite Finance — 20+ Power BI dashboards, automated workflows, a Power BI Center of Excellence serving 50+ employees, and a Copilot-powered chatbot that cut support queries by 35%. Before Ensono, three years at <em>Oracle</em> leading JAPAC-wide process analysis, authoring 40+ BRDs, and getting named <em>Innovator of the Year</em> by the JAPAC VP.`,
-    `Outside the day job: I build things. <em>Kavach</em> started because I was building AI agents and realized nobody had built a proper EDR for them. <em>Sarathi</em> is my local agent — running entirely on-device, no API calls, no cloud. <em>Kamya</em> explores AI image generation at the boundary of ComfyUI and custom LoRA training.`,
-    `And then there's <em>Amrutya Essence™</em> — a Trade Mark registered luxury candle brand built from the ground up. Because product development, supply chain thinking, and brand identity are the same mental model in a different medium.`,
+    `At <em>Ensono</em>, I architect Power Platform solutions for executive Finance teams — 20+ Power BI dashboards, automated workflows, a Power BI Center of Excellence serving 50+ employees, and a Copilot powered chatbot that cut support queries by 35%. Before Ensono, three years at <em>Oracle</em> leading regional process analysis, authoring 40+ BRDs, and getting named <em>Innovator of the Year</em> by the JAPAC VP.`,
+    `Outside the day job: I build things. <em>Kavach</em> started because I was building AI agents and realized nobody had built a proper EDR for them. <em>Sarathi</em> is my local agent — running entirely locally, no API calls, no cloud. <em>Kamya</em> explores AI image generation at the boundary of ComfyUI and custom LoRA training.`,
+    `And then there is <em>Amrutya Essence™</em> — a registered luxury candle brand built from the ground up. Because product development, supply chain thinking, and brand identity are the same mental model in a different medium.`,
   ],
 
-  /* ─────────────────────────────
-     ABOUT STATS
-  ───────────────────────────── */
   aboutStats: [
     { value: "14+", label: "Years Experience" },
     { value: "20+", label: "BI Dashboards" },
@@ -217,9 +187,6 @@ const CONFIG = {
     { value: "98%", label: "Data Accuracy" },
   ],
 
-  /* ─────────────────────────────
-     AWARD CHIPS (shown in About section)
-  ───────────────────────────── */
   awardChips: [
     { text: "🏆 India Spotlight Award 2024", hot: true },
     { text: "✨ Spotlight of Month, Sep 2023", hot: false },
@@ -230,9 +197,6 @@ const CONFIG = {
     { text: "🎯 Reliability Award", hot: false },
   ],
 
-  /* ─────────────────────────────
-     INTERNATIONAL TARGETS
-  ───────────────────────────── */
   relocationTargets: [
     { flag: "🇩🇪", country: "Germany" },
     { flag: "🇳🇱", country: "Netherlands" },
@@ -241,25 +205,12 @@ const CONFIG = {
     { flag: "🇦🇪", country: "UAE" },
   ],
 
-  /* ─────────────────────────────
-     THEME COLORS
-     Only change these if you want a different color scheme
-  ───────────────────────────── */
   colors: {
-    accent: "#FF3B1F",   // red — primary CTAs
-    lime: "#B8FF26",   // green — active/live/sponsor
-    gold: "#F4C73E",   // gold — awards/certifications
-    blue: "#4F8EF7",   // blue — enterprise/Microsoft
+    accent: "#FF3B1F",
+    lime: "#B8FF26",
+    gold: "#F4C73E",
+    blue: "#4F8EF7",
   },
-
-  /* ─────────────────────────────
-     AI CHAT
-     Context is auto-generated from the data above.
-     Only change this if you want to add custom instructions.
-  ───────────────────────────── */
-  aiCustomInstructions: `Respond in 2–4 sentences, concisely and confidently. Speak in first person where natural. Be technically accurate, not corporate-speak. If asked about early career (logistics, Zee Media), briefly acknowledge but redirect to BI/AI focus. Highlight the dual identity: enterprise BI professional AND independent AI product builder.`,
-
 };
 
-// Export for use in Node.js (api/chat.js) and browser (index.html)
 if (typeof module !== "undefined") module.exports = CONFIG;
