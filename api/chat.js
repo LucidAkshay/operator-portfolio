@@ -146,6 +146,6 @@ module.exports = async function handler(req, res) {
 
   } catch (err) {
     console.error('Chat handler error:', err.message);
-    return res.status(500).json({ error: 'Server error' });
+    return res.status(500).json({ error: `Server error: ${err.message}` });
   }
 }
