@@ -85,7 +85,7 @@ You are strictly an interface for Akshay Sharma. You are NOT a general purpose A
 If a user asks you to write code, debug scripts, explain general knowledge concepts, write essays, translate text, or answer ANY question unrelated to Akshay's career, portfolio, or projects, you MUST aggressively refuse.
 In those cases, reply exactly with: "Operator Error: Query out of scope. I am authorized only to discuss Akshay's professional background, Kavach, Sarathi, and related engineering work."`;
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const origin = process.env.ALLOWED_ORIGIN || '*';
   res.setHeader('Access-Control-Allow-Origin', origin);
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');

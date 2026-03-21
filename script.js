@@ -662,7 +662,7 @@ if (typeof CONFIG !== 'undefined' && CONFIG.colors) {
           body: JSON.stringify({ messages: chatHist.slice(-8) })
         });
         const data = await res.json();
-        const ans = data.answer || 'Something went wrong — please try again.';
+        const ans = data.answer || data.error || 'Something went wrong — please try again.';
         chatHist.push({ role: 'assistant', content: ans });
         hideTyping(); addMsg('ai', ans);
       } catch (err) {
