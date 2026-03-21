@@ -70,7 +70,9 @@ Tracking is built directly into the configuration. You do not need to copy and p
 
 ```text
 operator-portfolio/
-├── index.html          ← Main portfolio interface
+├── index.html          ← Main portfolio interface structure
+├── style.css           ← Core styling and theme tokens
+├── script.js           ← Interactivity, terminal, and render logic
 ├── config.js           ← ⭐ Edit this file to completely personalize the site
 ├── api/
 │   └── chat.js         ← Serverless backend proxy for the AI chat
@@ -113,11 +115,11 @@ git push
 | :--- | :--- |
 | Your name, location, and social links | `config.js` |
 | Google Analytics Measurement ID | `config.js` |
-| Projects, Experience, and Certifications | `config.js` |
-| Color scheme tokens | `config.js` |
+| Projects, Experience, Certs, and Prompts | `config.js` |
 | AI system prompt and context | `api/chat.js` |
+| Color scheme tokens | `style.css` (inside `:root`) |
 | Core structural layout | `index.html` |
-| Terminal commands | `index.html` (search for `CMDS`) |
+| Terminal commands and interactivity | `script.js` (search for `CMDS`) |
 
 ## License
 

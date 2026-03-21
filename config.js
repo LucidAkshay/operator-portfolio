@@ -54,6 +54,150 @@ const CONFIG = {
 
   heroDesc: `<strong>Senior BI Analyst at Ensono</strong> — architecting Power Platform solutions for executive Finance teams, delivering <strong>40% productivity gains</strong> across 2,900+ global associates. On the side: building <strong>Kavach</strong> (AI agent EDR), <strong>Sarathi</strong> (local AI), <strong>Kamya</strong> (AI image generation), running <strong>Amrutya Essence™</strong> (luxury candles), and open sourcing <strong>Operator Portfolio</strong> (this site).`,
 
+  pageSections: [
+    { id: "services", num: "01", title: "Work With Me", tmpl: "tmpl-services" },
+    { id: "work", num: "02", title: "Projects", containerId: "projects-grid", containerClass: "pgrid" },
+    { id: "about", num: "03", title: "About", tmpl: "tmpl-about", bg: "var(--s1)" },
+    { id: "certs", num: "04", title: "Certifications & Recognition", containerId: "certs-grid", containerClass: "certs-grid", extraHtml: '<div class="awards-row" id="awards-row" style="margin-top:2px"></div>' },
+    { id: "ask", num: "05", title: "Ask Akshay — AI", tmpl: "tmpl-ask", bg: "var(--s1)" },
+    { id: "exp", num: "06", title: "Experience", containerId: "timeline", containerClass: "tl" },
+    { id: "contact", num: "07", title: "Let us Work Together", tmpl: "tmpl-contact", bg: "var(--s1)" }
+  ],
+
+  navLinks: [
+    { href: "#work", label: "WORK" },
+    { href: "#about", label: "ABOUT" },
+    { href: "#certs", label: "CERTS" },
+    { href: "#ask", label: "ASK AI" },
+    { href: "#experience", label: "EXPERIENCE" },
+    { href: "#contact", label: "CONTACT" }
+  ],
+
+  bootSequence: [
+    "$ initializing akshay.dev <span class=\"inf\">v3.0</span>",
+    "&gt; identity verified: 14+ years professional experience <span class=\"ok\">[✓]</span>",
+    "&gt; kavach edr — ai workspace monitor <span class=\"ok\">[ACTIVE]</span>",
+    "&gt; sarathi + kamya <span class=\"warn\">[IN DEVELOPMENT]</span>",
+    "&gt; amrutya essence™ storefront <span class=\"ok\">[LIVE]</span>",
+    "&gt; power platform · n8n · genai <span class=\"ok\">[READY]</span>",
+    "&gt; rendering operator interface <span class=\"inf\">standby...</span>"
+  ],
+
+  aiChips: [
+    "What is your tech stack?",
+    "Tell me about Kavach.",
+    "Are you open to relocation?",
+    "Summarize your Power BI experience."
+  ],
+
+  terminalHints: [
+    "hire", "mentor", "enterprise", "collaborate", "kavach", "download"
+  ],
+
+  ticker: [
+    "14+ years experience ◆ senior bi analyst at ensono",
+    "kavach ◆ ai workspace edr · open source",
+    "sarathi ◆ local ai agent · in development",
+    "kamya ◆ ai image platform · in development",
+    "amrutya essence™ ◆ premium luxury candles",
+    "power bi · power apps · power automate ◆ microsoft power platform",
+    "available for enterprise · mentoring · collaboration ◆ international roles",
+  ],
+
+  services: [
+    {
+      cardClass: "enterprise",
+      icon: "🏢",
+      audience: "For Enterprises",
+      title: "BI & Analytics",
+      desc: "You need data systems that actually change decisions — not dashboards nobody opens. I build Power Platform solutions for Finance, Operations, and executive leadership.",
+      offers: [
+        "Power BI dashboards & Centers of Excellence",
+        "Power Apps + Automate workflow systems",
+        "Salesforce data governance",
+        "Copilot & AI chatbot integration",
+      ],
+      ctaText: "Start a Project →",
+      ctaLink: "#contact",
+    },
+    {
+      cardClass: "founders",
+      icon: "🚀",
+      audience: "For Founders",
+      title: "AI Product Build",
+      desc: "You have an idea for an AI product. I can help you go from PRD to production — architecture, automation, monetization strategy. I have done it with Kavach, Sarathi, and Kamya.",
+      offers: [
+        "AI agent architecture & automation (n8n)",
+        "Product strategy & monetization",
+        "Backend automation pipelines",
+        "GenAI integration & prompt engineering",
+      ],
+      ctaText: "Let us Build →",
+      ctaLink: "#contact",
+    },
+    {
+      cardClass: "developers",
+      icon: "👨‍💻",
+      audience: "For Developers",
+      title: "Open Source + Pair",
+      desc: "Kavach is open source and actively developed. Contribute, fork, or just use it. Open to pairing on AI security tooling, EDR concepts, or data pipeline architecture.",
+      offers: [
+        "Contribute to Kavach (AI EDR)",
+        "Pair on AI agent monitoring",
+        "Code review & architecture feedback",
+      ],
+      ctaText: "GitHub →",
+      ctaLink: "https://github.com/LucidAkshay/kavach",
+      ctaExternal: true,
+    },
+    {
+      cardClass: "mentees",
+      icon: "🎓",
+      audience: "For Career Seekers",
+      title: "Mentoring & Guidance",
+      desc: "Transitioning into BI, data analytics, or AI? I have been where you are — from logistics to Oracle to Ensono, building skills across domains. Let me help you navigate it.",
+      offers: [
+        "BI career path planning & guidance",
+        "Resume and LinkedIn profile reviews",
+        "Power Platform learning roadmaps",
+        "Breaking into AI / GenAI as an analyst",
+        "Interview prep for data & BI roles",
+      ],
+      ctaText: "Book a Session →",
+      ctaLink: "#contact",
+    },
+    {
+      cardClass: "collab",
+      icon: "🧠",
+      audience: "For Collaborators & Ideators",
+      title: "Brainstorm & Build",
+      desc: "Have an idea that spans data + AI + product? Let us think through it together. Cross domain conversations, new product concepts, business problems, fresh perspective.",
+      offers: [
+        "Product concept validation & refinement",
+        "Data strategy for new ventures",
+        "AI product roadmap collaborative development",
+        "Joint exploration of AI use cases",
+      ],
+      ctaText: "Start a Conversation →",
+      ctaLink: "#contact",
+    },
+  ],
+
+  aboutCards: [
+    {
+      label: "Primary Stack",
+      title: "Microsoft Power Platform",
+      desc: "Power BI · Power Apps · Power Automate · SharePoint · Copilot · DAX · VBA · Salesforce",
+      tag: "Enterprise"
+    },
+    {
+      label: "AI & Automation",
+      title: "GenAI Application Builder",
+      desc: "n8n · Local LLMs · ComfyUI · LoRA · LangChain · Prompt Engineering · AI Agents",
+      tag: "Independent Projects"
+    }
+  ],
+
   projects: [
     {
       id: "kavach",
@@ -61,7 +205,8 @@ const CONFIG = {
       name: "Kavach",
       status: "live",
       statusLabel: "● Live",
-      featured: true,
+      template: "featured",
+      cardClass: "kavach",
       desc: "Tactical AI Workspace Monitor and Endpoint Detection & Response system. Kavach watches your AI agents — detecting rogue behavior, unauthorized access, and anomalous tool usage before they become incidents. Because if you're building AI agents, you also need to contain them.",
       tags: ["AI Agents", "EDR", "Security", "Python", "Open Source"],
       link: "https://github.com/LucidAkshay/kavach",
@@ -74,7 +219,6 @@ const CONFIG = {
       name: "Sarathi",
       status: "dev",
       statusLabel: "⚙ In Dev",
-      featured: false,
       desc: "A customized local AI agent — running entirely locally, no cloud dependency, no data leaving your machine. Complex tasks with genuine context awareness.",
       tags: ["Local LLM", "n8n", "Python", "Agents"],
       link: "#",
@@ -87,7 +231,6 @@ const CONFIG = {
       name: "Kamya",
       status: "dev",
       statusLabel: "⚙ In Dev",
-      featured: false,
       desc: "AI image generation platform built on ComfyUI workflows and LoRA training. Custom model tuning, workflow automation, and a monetization layer.",
       tags: ["ComfyUI", "LoRA", "Python", "Product"],
       link: "#",
@@ -100,7 +243,8 @@ const CONFIG = {
       name: "Amrutya Essence™",
       status: "tm",
       statusLabel: "® TM",
-      featured: false,
+      template: "candle",
+      cardClass: "amrutya-card",
       desc: "Pure. Elegant. Timeless. A registered luxury candle brand — hand poured scented candles, concrete jar vessels, Valentine Collection, Arabian Oudh. Built entirely by me.",
       tags: ["Brand Design", "ECommerce", "Candles", "Trademark"],
       link: "https://amrutyaessence.com",
@@ -113,7 +257,8 @@ const CONFIG = {
       name: "Operator Portfolio",
       status: "live",
       statusLabel: "● Open Source",
-      featured: false,
+      template: "terminal",
+      cardClass: "portfolio-card",
       desc: "The portfolio you're looking at — built from curiosity, open sourced for everyone. Config driven, AI chat, built in terminal easter egg. No frameworks, no build tools, no paid plugins. Loads instantly. Deploy to Vercel in 10 minutes.",
       tags: ["HTML/CSS/JS", "Open Source", "Template", "Vercel", "MIT"],
       link: "https://github.com/LucidAkshay/operator-portfolio",

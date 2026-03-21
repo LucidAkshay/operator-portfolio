@@ -86,6 +86,15 @@ If a user asks you to write code, debug scripts, explain general knowledge conce
 In those cases, reply exactly with: "Operator Error: Query out of scope. I am authorized only to discuss Akshay's professional background, Kavach, Sarathi, and related engineering work."`;
 
 export default async function handler(req, res) {
+  const origin = process.env.ALLOWED_ORIGIN || '*';
+  res.setHeader('Access-Control-Allow-Origin', origin);
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(204).end();
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -132,11 +141,6 @@ export default async function handler(req, res) {
     }
 
     const answer = data.choices?.[0]?.message?.content || 'No response generated.';
-
-    const origin = process.env.ALLOWED_ORIGIN || '*';
-    res.setHeader('Access-Control-Allow-Origin', origin);
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
     return res.status(200).json({ answer });
 
