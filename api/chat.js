@@ -133,12 +133,13 @@ module.exports = async function handler(req, res) {
       })
     });
 
-    const data = await response.json();
-
     if (!response.ok) {
-      console.error('NIM error:', JSON.stringify(data));
-      return res.status(502).json({ error: 'AI service temporarily unavailable' });
+      const text = await response.text();
+      console.error(`NIM error ${response.status}:`, text);
+      return res.status(502).json({ error: `AI service rejected request (${response.status} ${response.statusText}): ${text.slice(0, 100)}` });
     }
+
+    const data = await response.json();
 
     const answer = data.choices?.[0]?.message?.content || 'No response generated.';
 
