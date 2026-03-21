@@ -14,6 +14,14 @@
             "use": "@vercel/static"
         },
         {
+            "src": "style.css",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "script.js",
+            "use": "@vercel/static"
+        },
+        {
             "src": "assets/**",
             "use": "@vercel/static"
         }
@@ -30,6 +38,14 @@
         {
             "src": "/config.js",
             "dest": "/config.js"
+        },
+        {
+            "src": "/style.css",
+            "dest": "/style.css"
+        },
+        {
+            "src": "/script.js",
+            "dest": "/script.js"
         },
         {
             "src": "/(.*)",
