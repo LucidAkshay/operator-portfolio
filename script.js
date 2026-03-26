@@ -496,7 +496,7 @@ if (typeof CONFIG !== 'undefined' && CONFIG.colors) {
 
 <span class="w">ABOUT:</span>       <span class="d">whoami · stack · certs · awards · stats</span>
 <span class="w">WORK WITH ME:</span><span class="b"> enterprise</span> · <span class="a">hire</span> · <span class="g">mentor</span> · <span class="l">collaborate</span> · <span class="d">developer</span>
-<span class="w">PROJECTS:</span>    <span class="d">kavach · sarathi · kamya · amrutya · portfolio</span>
+<span class="w">PROJECTS:</span>    <span class="d">kavach · vikaasloop · sarathi · kamya · amrutya · portfolio</span>
 <span class="w">NAVIGATE:</span>    <span class="d">open [services|work|about|certs|ask|exp|contact]</span>
 <span class="w">OTHER:</span>       <span class="d">download · sponsor · clear · exit</span>`,
       whoami: `<span class="w">${C.name || 'Akshay Sharma'}</span> / ${C.pronouns || 'He/Him'} / ${C.handle || 'LucidAkshay'}
@@ -531,6 +531,11 @@ if (typeof CONFIG !== 'undefined' && CONFIG.colors) {
 <span class="l">Status: ● Active · Open Source</span>
 <span class="d">Watches AI agents for rogue behavior, unauthorized access, anomalous activity.</span>
 <span class="l">${C.kavachRepo || 'https://github.com/LucidAkshay/kavach'}</span>`,
+      vikaasloop: `<span class="w">VikaasLoop — Self-Improving LLM Fine-Tuning Engine</span>
+<span class="l">Status: ● Live · Open Source</span>
+<span class="d">5-agent loop: data gen → QLoRA train → LLM eval → strategy memory → repeat.</span>
+<span class="d">Runs on your local machine. Free. Gets smarter every iteration.</span>
+<span class="l">${C.vikaasloopRepo || 'https://github.com/LucidAkshay/vikaasloop'}</span>`,
       sarathi: `<span class="w">Sarathi — Local AI Agent</span>
 <span class="g">Status: ⚙ In Development</span>
 <span class="d">On device agent. No cloud. No API calls. Your data stays yours.</span>`,

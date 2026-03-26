@@ -32,6 +32,7 @@ const CONFIG = {
   github: "https://github.com/LucidAkshay",
   sponsor: "https://github.com/sponsors/LucidAkshay",
   kavachRepo: "https://github.com/LucidAkshay/kavach",
+  vikaasloopRepo: "https://github.com/LucidAkshay/vikaasloop",
   templateRepo: "https://github.com/LucidAkshay/operator-portfolio",
   amrutya: "https://amrutyaessence.com",
 
@@ -40,19 +41,19 @@ const CONFIG = {
 
   siteUrl: "https://lucidakshay.dev",
   siteTitle: "Akshay Sharma — Senior BI Analyst & AI Application Builder",
-  siteDesc: "Akshay Sharma — 14+ years experience. Senior BI Analyst at Ensono. Creator of Kavach AI EDR, Sarathi, Kamya. Power Platform, n8n, GenAI. Available for enterprise consulting, mentoring, and collaboration.",
+  siteDesc: "Akshay Sharma — 14+ years experience. Senior BI Analyst at Ensono. Creator of Kavach AI EDR, VikaasLoop (self-improving LLM fine-tuner), Sarathi, Kamya. Power Platform, n8n, GenAI. Available for enterprise consulting, mentoring, and collaboration.",
   twitterHandle: "@Akshay_Dvlpr",
 
   stats: {
     years: { value: "14+", label: "Years Experience" },
     gain: { value: "40%", label: "Productivity Gain" },
     associates: { value: "2900+", label: "Associates Served" },
-    products: { value: "5", label: "Products Built" },
+    products: { value: "6", label: "Products Built" },
   },
 
   heroTags: ["Power Platform", "n8n", "GenAI", "AI Agents", "Founder"],
 
-  heroDesc: `<strong>Senior BI Analyst at Ensono</strong> — architecting Power Platform solutions for executive Finance teams, delivering <strong>40% productivity gains</strong> across 2,900+ global associates. On the side: building <strong>Kavach</strong> (AI agent EDR), <strong>Sarathi</strong> (local AI), <strong>Kamya</strong> (AI image generation), running <strong>Amrutya Essence™</strong> (luxury candles), and open sourcing <strong>Operator Portfolio</strong> (this site).`,
+  heroDesc: `<strong>Senior BI Analyst at Ensono</strong> — architecting Power Platform solutions for executive Finance teams, delivering <strong>40% productivity gains</strong> across 2,900+ global associates. On the side: building <strong>Kavach</strong> (AI agent EDR), <strong>VikaasLoop</strong> (self-improving LLM fine-tuner), <strong>Sarathi</strong> (local AI), <strong>Kamya</strong> (AI image generation), running <strong>Amrutya Essence™</strong> (luxury candles), and open sourcing <strong>Operator Portfolio</strong> (this site).`,
 
   pageSections: [
     { id: "services", num: "01", title: "Work With Me", tmpl: "tmpl-services" },
@@ -77,6 +78,7 @@ const CONFIG = {
     "$ initializing akshay.dev <span class=\"inf\">v3.0</span>",
     "&gt; identity verified: 14+ years professional experience <span class=\"ok\">[✓]</span>",
     "&gt; kavach edr — ai workspace monitor <span class=\"ok\">[ACTIVE]</span>",
+    "&gt; vikaasloop — self-improving llm fine-tuning engine <span class=\"ok\">[LIVE]</span>",
     "&gt; sarathi + kamya <span class=\"warn\">[IN DEVELOPMENT]</span>",
     "&gt; amrutya essence™ storefront <span class=\"ok\">[LIVE]</span>",
     "&gt; power platform · n8n · genai <span class=\"ok\">[READY]</span>",
@@ -91,12 +93,13 @@ const CONFIG = {
   ],
 
   terminalHints: [
-    "hire", "mentor", "enterprise", "collaborate", "kavach", "download"
+    "hire", "mentor", "enterprise", "collaborate", "kavach", "vikaasloop", "download"
   ],
 
   ticker: [
     "14+ years experience ◆ senior bi analyst at ensono",
     "kavach ◆ ai workspace edr · open source",
+    "vikaasloop ◆ autonomous llm fine-tuning engine · open source",
     "sarathi ◆ local ai agent · in development",
     "kamya ◆ ai image platform · in development",
     "amrutya essence™ ◆ premium luxury candles",
@@ -214,6 +217,18 @@ const CONFIG = {
       linkStyle: "lime",
     },
     {
+  id: "vikaasloop",
+  type: "AI Research Tool — Open Source",
+  name: "VikaasLoop",
+  status: "live",
+  statusLabel: "● Live",
+  desc: "The self-improving LLM fine-tuning engine. Give it a task, a base model, and a quality target — it runs a 5-agent loop (data gen → QLoRA train → LLM eval → strategy memory → repeat) until your model hits the mark. Entirely local. Entirely free. The first open-source tool that closes the full fine-tuning loop autonomously.",
+  tags: ["Python", "FastAPI", "PyTorch", "QLoRA", "Gemini", "Open Source"],
+  link: "https://github.com/LucidAkshay/vikaasloop",
+  linkText: "View on GitHub",
+  linkStyle: "lime",
+},
+    {
       id: "sarathi",
       type: "Local AI Agent — Personal Project",
       name: "Sarathi",
@@ -321,7 +336,7 @@ const CONFIG = {
 
   bio: [
     `At <em>Ensono</em>, I architect Power Platform solutions for executive Finance teams — 20+ Power BI dashboards, automated workflows, a Power BI Center of Excellence serving 50+ employees, and a Copilot powered chatbot that cut support queries by 35%. Before Ensono, three years at <em>Oracle</em> leading regional process analysis, authoring 40+ BRDs, and getting named <em>Innovator of the Year</em> by the JAPAC VP.`,
-    `Outside the day job: I build things. <em>Kavach</em> started because I was building AI agents and realized nobody had built a proper EDR for them. <em>Sarathi</em> is my local agent — running entirely locally, no API calls, no cloud. <em>Kamya</em> explores AI image generation at the boundary of ComfyUI and custom LoRA training.`,
+    `Outside the day job: I build things. <em>Kavach</em> started because I was building AI agents and realized nobody had built a proper EDR for them. <em>VikaasLoop</em> came next — an autonomous 5-agent engine that fine-tunes LLMs on your laptop, for free, in a self-improving loop that gets smarter every iteration. <em>Sarathi</em> is my local agent — running entirely locally, no API calls, no cloud. <em>Kamya</em> explores AI image generation at the boundary of ComfyUI and custom LoRA training.`,
     `And then there is <em>Amrutya Essence™</em> — a registered luxury candle brand built from the ground up. Because product development, supply chain thinking, and brand identity are the same mental model in a different medium.`,
   ],
 
